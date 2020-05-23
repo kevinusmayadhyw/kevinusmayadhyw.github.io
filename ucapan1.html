@@ -1,11 +1,27 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Coba Coba</title>
+        <title>Jangan</title>
         <link rel="stylesheet" href="style.css">
     </head>
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript">
+        $(function(){
+            setTimeout(function() {
+                $('.fly-in-text').removeClass('hidden');
+            }, 500);
+        })();
 
+        function backgroundresponsive(){
+            $('body').css('background', 'url(image/Hello.jpg) no-repeat');
+            $('body').css('background-position', 'center center');
+            $('body').css('background-attachment','fixed');
+            $('body').css('background-size','cover');
+            $('body').css('background-color','#464646');
+        }
+    </script>
     <body>
+        <script>backgroundresponsive()</script>
         <ul href= "ucapan2.html" class="fly-in-text hidden">
             <li><a href="ucapan2.html">H</a></li>
             <li><a href="ucapan2.html">E</a></li>
@@ -14,14 +30,6 @@
             <li><a href="ucapan2.html">O</a></li>
             <li><a href="ucapan2.html">!</a></li>
         </ul>
-        <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-        <script type="text/javascript">
-            $(function(){
-                setTimeout(function() {
-                    $('.fly-in-text').removeClass('hidden');
-                }, 500);
-            })();
-        </script>
 
     </body>
 </html>
